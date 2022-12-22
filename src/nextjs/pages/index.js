@@ -9,6 +9,8 @@ export default function Home(props) {
    *  Learn more about LIFF API documentation (https://developers.line.biz/en/reference/liff)
    **/
   console.log(props)
+  const { liff, liffError } = props;
+  console.log(liff.getVersion());
   return (
     <div>
       <Head>
