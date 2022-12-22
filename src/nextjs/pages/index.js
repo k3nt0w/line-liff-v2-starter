@@ -8,6 +8,7 @@ export default function Home(props) {
    *
    *  Learn more about LIFF API documentation (https://developers.line.biz/en/reference/liff)
    **/
+  console.log(props)
   return (
     <div>
       <Head>
