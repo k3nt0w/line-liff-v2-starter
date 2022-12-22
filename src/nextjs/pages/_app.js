@@ -12,9 +12,10 @@ function MyApp({ Component, pageProps }) {
       console.log("start liff.init()...");
       liff
         .init({ liffId: process.env.LIFF_ID })
-        .then(() => {
+        .then(async () => {
           console.log("liff.init() done");
           setLiffObject(liff);
+          await liff.login()
         })
         .catch((error) => {
           console.log(`liff.init() failed: ${error}`);
